@@ -1,0 +1,29 @@
+server:
+  address: localhost
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://likelion-study-db.cyyxydkraovm.ap-northeast-2.rds.amazonaws.com:3306/LIONTEST
+    username: admin
+    password: 12345678
+    ## LOCAL DB
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/board?useUnicode=true&characterEncoding=UTF-8
+#    username: TESTUSER
+#    password: 1234
+
+
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        formal_sql: true
+
+jwt:
+  secret: LmFwaS1leGFtcGxlX0RBTi1MSUtFTElPTi0xMVRILVNFSk9ORy11bml2ZXJzaXR5LWJhY2tFbmQtU2V2ZXItRGV2ZWxvcE1lbnQu
